@@ -1,0 +1,1177 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    text-align: center;
+    position: relative;
+    height: 90px;
+}
+
+
+
+.logo-img {
+   
+    height: 200px;
+    width: 200px; 
+   
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 5px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    width: 450px; 
+}
+
+.search-icon {
+    color: black;
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+    position:relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+nav ul li a i { 
+    font-size: 1.5rem; 
+    margin-right: 8px;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(233, 224, 224);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.hero-text h2{
+    
+    color:white;
+}
+/* About Us Section */
+.about-us header{
+border-radius: 10%;
+border-color: #ccc;
+}
+.about {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+/* Style for the 'About Us' link */
+.about-us {
+    color: white; /* Text color */
+    padding: 10px 20px; /* Add padding around the link */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make it block-level to apply width, height, etc. */
+    border: 2px solid white; /* Add a white border */
+    border-radius: 5px; /* Optional: add rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect for the 'About Us' link */
+.about-us:hover {
+    background-color: white; /* Change background color on hover */
+    color: black; /* Change text color on hover */
+}
+
+
+.block {
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.block.reverse {
+    flex-direction: row-reverse;
+}
+.circle-image {
+    width: 100px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex:1;
+    background-color:transparent;
+}
+
+.circle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-content {
+   flex:2;
+   padding-left:20px;
+}
+
+.text-content h2 {
+    margin: 0;
+    font-size: 1.5rem; /* Adjust as needed */
+}
+
+.text-content p {
+    font-size: 1.2rem; /* Increase font size */
+    margin-top: 10px;
+}
+.group-members{
+    flex-direction:column;
+    align-items:center;
+}
+
+.center-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.members {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.member {
+    text-align: center;
+    flex: 1;
+}
+
+.member .circle-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: lightcoral; /* Add a background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px auto; /* Center the image and add margin */
+}
+
+.member .circle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.member p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+
+@media (max-width: 768px) {
+    .hero-text {
+        font-size: 3rem;
+    }
+
+    .block {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .block.reverse {
+        flex-direction: column;
+    }
+
+    .members {
+        flex-direction: column;
+    }
+}
+
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.contact-icon {
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 5px;
+    font-size:1.5rem;
+}
+
+/* Dropdown Menu */ 
+.dropdown { 
+    position: relative; 
+    display: inline-block; 
+} 
+.dropbtn { 
+    background: none; 
+    border: none; 
+    color: white; 
+    padding: 10px; 
+    font-size: 1rem; 
+    cursor: pointer; 
+} 
+.dropdown-content { 
+    display: none; 
+    position: absolute;
+    background: linear-gradient(to right, lightgrey, white); 
+    border-radius:10px;
+    min-width: 250px; 
+    max-height:300px;
+    overflow-y:auto;
+    z-index: 1;
+} 
+.dropdown-content a {
+     color: black; 
+     padding: 12px 16px; 
+     text-decoration: none; 
+     display: block; 
+} 
+.dropdown-content a:hover { 
+    background-color: lightsalmon;
+    color: #333; /* Text color on hover */ 
+    border-radius: 10px; /* Match the dropdown corners */ 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */ 
+} 
+.dropdown:hover .dropdown-content { 
+    display: block; 
+} 
+.dropdown:hover .dropbtn {
+     color: #ddd;
+}
+
+ol {
+    list-style-type: decimal;
+    margin-left: 20px; 
+}
+
+li {
+    margin-bottom: 10px; 
+}
+
+
+
+/* Featured Recipes Section */
+.featured-recipes {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.featured-recipes h2 {
+    color:#000;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.recipe-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.recipe-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.recipe-item h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.recipe-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.recipe-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Dish List Page Styling */
+.recipe-list-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.recipe-list-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.recipe-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.recipe-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.recipe-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.recipe-item h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.recipe-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.recipe-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for Popular Dishes Section */
+.popular-dishes {
+    text-align: left;
+}
+.popular-dishes h4{
+    color:black;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.popular-dishes h2 {
+    padding: 20px;
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+/* Container for dish items */
+.popular-dishes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Style for each dish item */
+.dish-item {
+    width: 250px;
+    text-align: center;
+}
+
+.dish-image-container {
+    width: 150px; 
+    height: 150px; 
+    overflow: hidden;
+    border-radius: 50%; 
+    margin: 0 auto;
+}
+
+.dish-image-container img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+}
+
+/* Add hover effect to images */
+.dish-image-container img:hover {
+    transform: scale(1.05);
+}
+/* Recipe Details Page Styling */
+.recipe-details {
+    padding: 40px 20px;
+}
+
+.recipe-details img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.recipe-details h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.recipe-details .recipe-video {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.recipe-details .recipe-video video {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.recipe-details ul, .recipe-details ol {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.recipe-details li {
+    margin-bottom: 10px;
+}
+/* Trending Now Section */
+.trending-now {
+    margin-bottom: 0px;
+    margin-top: 10px;
+    text-align: left;
+    
+}
+
+.trending-now h2 {
+    color: #000;
+    padding: 20px;
+    font-size: 2em;
+    
+}
+
+/* Apply the same grid layout for Trending Now as Featured Recipe */
+.trending-now .recipe-grid {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.trending-now .recipe-item {
+    width: 23%; /* Each item takes up 23% of the container width */
+    text-align: center;
+    margin-bottom: 0px; /* Space between rows if wrapped */
+}
+
+.trending-now .recipe-item img {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.trending-now .recipe-item h4 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+/* Don't Miss Section */
+.DONT-MISS {
+    text-align: left;
+    padding: 20px 20px;
+    background-color: white;
+}
+
+.DONT-MISS h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+/* Flex container to hold the images and captions in a row */
+.dont-miss-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between images */
+}
+
+/* Styling each item in the row */
+.dont-miss-item {
+    width: 32%; /* Each image will take up 32% of the width */
+    position: relative;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling the images */
+.dont-miss-item img {
+    width: 100%; /* The image will fill its container */
+    height: 400px;
+    object-fit: cover; /* Ensures image covers the space */
+}
+
+/* Caption styling */
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: transparent; /* Semi-transparent black background */
+
+    text-align: center;
+    padding: 70px;
+}
+
+/* Styling the dish name text */
+.caption h2{
+    
+    color: white;
+    margin: 20;
+    font-size: 2.5em;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .dont-miss-item {
+        width: 48%; /* On smaller screens, each item will take up 48% of the width */
+    }
+}
+
+@media (max-width: 480px) {
+    .dont-miss-item {
+        width: 100%; /* On very small screens, each item will take up 100% width */
+    }
+}
+/* General styling for recipe grid */
+.fan-favourite .recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns in one row */
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.fan-favourite .recipe-item {
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.fan-favourite .recipe-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.fan-favourite .recipe-item h4 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Styling for the Fan Favourite section */
+.fan-favourite {
+    padding: 20px 20px;
+    background-color: white;
+}
+
+.fan-favourite h2 {
+    text-align: left;
+    font-size: 2em;
+
+    color: #000;
+}
+
+/* Responsive layout */
+@media (max-width: 1200px) {
+    .recipe-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+    }
+}
+
+@media (max-width: 800px) {
+    .recipe-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+}
+
+@media (max-width: 500px) {
+    .recipe-grid {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+}
+
+
+/* Dish Categories Section */
+.dish-categories {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.dish-categories input[type="radio"] {
+    display: none;
+}
+
+.dish-categories label {
+    display: inline-block;
+    background-color: #f37c7c;
+    color:aqua rgb(0, 0, 0);
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.dish-categories input[type="radio"]:checked + label {
+    background-color: #fcf8f8;
+}
+
+/* Dishes Section */
+.dishes {
+    display: none;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.dishes .dish {
+    display: inline-block;
+    margin: 20px;
+    width: 400px;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+.dishes .dish img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.dishes .dish h4 {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+.dishes .dish:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.dish-categories h2{
+    color: #000;
+}
+
+
+/* Show dishes when the respective radio button is selected */
+#desi:checked ~ .dishes#desi-dishes {
+    display: block;
+}
+
+#healthy:checked ~ .dishes#healthy-dishes {
+    display: block;
+}
+
+#special:checked ~ .dishes#special-dishes {
+    display: block;
+}
+#common:checked ~ .dishes#common-dishes {
+    display: block;
+}
+#favourite:checked ~ .dishes#favourite-dishes {
+    display: block;
+}
+/* Recipe Container */
+.recipe-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Dish Name */
+.dish-name {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+/* Description Section */ 
+.description-section { 
+    text-align: center; 
+    padding: 20px; 
+    background-color: #fff; 
+    color: #555; 
+    font-size: 1.1rem; 
+    border-bottom: 1px solid #ddd; 
+}
+
+/* Content Section */
+.content-section {
+     display: flex;
+      padding: 20px;
+      gap: 20px;
+       background-color: #fff; 
+       border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+ 
+.left-column, .right-column {
+flex: 1; 
+padding: 20px;
+background-color: #f9f9f9;
+ border-radius: 10px
+}
+.recipe-video {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.recipe-video video {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 5px;
+ }
+.ingredients ol {
+    list-style-type: disc;
+    padding-left: 20px;
+ } 
+ .right-column ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+ }
+
+ .ingredients  li, .right-column ol li {
+
+ font-size: 1.1rem; 
+ margin-bottom: 10px; 
+}
+.comments-section { 
+    margin-top: 20px; 
+    background-color: #f0f0f0; 
+    padding: 15px; 
+    border-radius: 10px; 
+    display: flex; 
+    flex-direction: column;
+    gap: 15px
+}
+.comments-section h3, .comment-form h4 {
+     margin-bottom: 15px; 
+     color: #d9534f; /* Red color for headings */ 
+} 
+.comment { 
+    display: flex; 
+    align-items: flex-start; 
+    margin-bottom: 15px; 
+} 
+.avatar {
+     width: 40px; 
+     height: 40px;
+     background-color: #d9534f; 
+     color: white; 
+     border-radius: 50%; 
+     display: flex; 
+     align-items: center; 
+     justify-content: center; 
+     font-size: 1.2rem; 
+     margin-right: 10px;
+} 
+.comment-text {
+     flex: 1;
+} 
+.comment-text strong { 
+    display: block;
+} 
+.comment-form input, .comment-form textarea { 
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+} 
+.comment-form button { 
+    background-color: #d9534f;
+    color: white; 
+    border: none; 
+    padding: 10px 20px;
+    border-radius: 5px; 
+    cursor: pointer; 
+} 
+.comment-form button:hover {
+     background-color: #c9302c;
+}
+/* All Headings Color Red */
+ h2 {
+     color: #d9534f; 
+}
+/* Rating Section */ 
+.rating-section { 
+    margin-top: 20px; 
+    text-align: center; 
+} 
+.stars { 
+    display: inline-block; 
+} 
+.stars input[type="radio"] { 
+    display: none; 
+} 
+.stars label { 
+    font-size: 2rem; 
+    color: #d3d3d3; 
+    cursor: pointer; 
+} 
+.stars input[type="radio"]:checked ~ label { 
+    color: #ffd700;
+}
+
+/* Footer styling */
+footer {
+    background-color: black;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+footer .footer-info,
+footer .footer-links,
+footer .footer-newsletter {
+    flex: 1;
+    padding: 10px;
+    max-width: 300px;
+}
+
+footer h2,
+footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+footer .footer-links ul {
+    list-style: none;
+}
+
+footer .footer-links li {
+    margin: 10px 0;
+}
+
+footer .footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .footer-links a:hover {
+    color: #ddd;
+}
+
+footer .footer-newsletter form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer-newsletter input {
+    padding: 10px;
+    margin-right: 10px;
+    width: 70%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+footer .footer-newsletter button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+footer .footer-newsletter button:hover {
+    background-color: #45a049;
+}
+
+footer .footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+footer button:hover { 
+    background-color: green; 
+} 
+footer .social-share { 
+    color: rgb(247, 245, 245); 
+    margin-top: 30px; 
+    text-align: center; 
+} 
+footer .social-share a { 
+    color: rgb(245, 126, 126); 
+    font-size: 1.2rem; 
+    margin: 0 10px; 
+    text-decoration: none;
+}
+
+/* Contact Header Section */
+.contact-header {
+    background: #ffcc99;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.contact-header h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.contact-header p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Contact Section */
+.contact-cont {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    columns:right;
+}
+
+.contact-info {
+    width: 30%;
+    columns:left;
+}
+
+.info-block {
+    background: #c47c77;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    columns: right;
+}
+
+.icon img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Contact Form Section */
+.contact-form {
+    columns: left;
+    width: 60%;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    background-color:#c47c77;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.submit-btn:hover {
+    background-color:#c47c77;
+}
+
+/* FAQ Section */
+.faq {
+    padding: 40px;
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+.faq h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item input[type="checkbox"] {
+    display: none;
+}
+
+.faq-item label {
+    display: block;
+    background-color: #f1f1f1;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.faq-item label:hover {
+    background-color: #e6e6e6;
+}
+
+.faq-item .faq-answer {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 4px solid lightcoral;
+    margin-top: 10px;
+}
+
+.faq-item input[type="checkbox"]:checked + label + .faq-answer {
+    display: block;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .contact-cont {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+}
